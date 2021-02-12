@@ -1,0 +1,57 @@
+nav{
+    margin-left: 520px;
+  }
+  .image{
+    background: url("../images/Admin.png");
+    opacity: 0.7;
+    height: 450px;
+  }
+ 
+
+  .ajout {
+      margin-top: 50px;
+    width: 250px;
+    height: 40px;
+    
+}
+
+
+
+  @media (max-width: 375px){
+    nav{
+        display: block;
+        margin-left: 0;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .ajout {
+        margin-top: 50px;
+      width: auto;
+      height: auto;
+      
+  }
+  .image{
+    background: url("../images/Admin.png");
+    opacity: 0.7;
+    width: auto;
+  }
+  footer{
+      font-size: 12px;
+  }
+
+  .container important{
+      width: au; 
+  }
+}
+
+
+
+  @media (max-width: 768px){
+      nav{
+          display: block;
+          margin-left: 0;
+          margin: 0;
+          margin-top: 100px;
+      }
+    
+  }

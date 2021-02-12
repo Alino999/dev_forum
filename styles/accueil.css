@@ -1,0 +1,39 @@
+.bg-image{
+    
+    background-image: url("../images/classe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 660px;
+  }
+  nav{
+    margin-left: 520px;
+  }
+  figure{
+    background-color: white;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    
+  }
+
+
+
+
+
+  @media (max-width:768px){
+    .bg-image{
+    
+        background-image: url("../images/classe.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 660px;
+      }
+      header{
+        display: block;
+        margin-left: 0;
+          margin: 0;
+      }
+    
+  }
