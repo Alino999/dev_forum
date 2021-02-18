@@ -87,7 +87,40 @@ require_once 'affichage.php';
 
         <?php
     }                  
-        ?>    <div class="container-fluid">
+        ?>  
+        
+        
+<?php
+require_once 'afficher_reponse.php';
+    while($data = $recuperation->fetch()) {
+        ?>
+
+        <div class="container ">
+            <div class="shadow p-3 mb-5 bg-light rounded">
+                <div class="row d-flex">
+                    <div class="col-3 d-flex">
+                        <img src="fonts/User_48px.png" alt="">
+                        <div class="mt-3 color-succes"><?= $data['username']; ?></div>
+                    </div>
+                    <div style="margin-left: 440px; color:#10F86C;" class="col-4"><?= $data['date_a']; ?></div>
+                </div>
+                 <div class="col-3">
+                    <div><?= $data['reponses']; ?></div>
+                </div>
+               
+                </div>
+
+                <?php   //echo "<td>".$data."</td> ?>
+
+        </div>
+
+        
+        
+
+        <?php
+    }                  
+        ?>
+        <div class="container-fluid">
         <div class="container">
           <div class="container">
             <footer>
