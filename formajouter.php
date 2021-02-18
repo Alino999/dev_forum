@@ -32,7 +32,7 @@
                                 <a class="nav-link active" aria-current="page" href="afficher.php">Forum</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="inscription.php">Connexion</a>
+                                <a class="nav-link active" href="deconnexion.php">Deconnexion</a>
                               </li>
                             </ul>
                           </div>
@@ -62,7 +62,7 @@
                         ?>
                          <div class="alert alert-success" role="alert">
                      <h4 class="alert-heading text-center">FELICITATION</h4>
-                  <p class="text-center">Votre inscription a été effectuée avec succès.</p>
+                  <p class="text-center">Votre ajoue a été effectuée avec succès.</p>
                               <hr>
                      <p class="text-center"><a href="accueil.html">Acceder à votre compte</a></p>
                         </div>
@@ -111,7 +111,7 @@
                             </div>
                         <?php 
 
-                    }
+                    } 
                 }
                 ?>
 
@@ -122,7 +122,7 @@
 
                 <form class="m-auto " id="contact" action="traitementincription.php" method="post">
                   <h3>Administrateur</h3>
-                  <h4>Inscrivez</h4>
+                  <h4>Ajouter</h4>
                   <div class="m-auto">
                       <div class="text-center">
                         <fieldset class="text-center" >
@@ -139,7 +139,7 @@
                         <input name="confirm_pass" placeholder="confirme mot de passe" type="password"  required>
                       </fieldset>
                       <fieldset>
-                        <button name="submit" type="submit" id="submit" data-submit="...Sending">Inscription</button>
+                        <button name="submit" type="submit" id="submit" data-submit="...Sending">Ajouter</button>
                       </fieldset>
                   </div>
                   <p class="copyright"> <a href="connexion.php" style="color: #10F86C; text-decoration: none;"  title="Colorlib">Connexion</a></p>

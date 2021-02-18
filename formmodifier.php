@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
+    <title>Modification</title>
     <link rel="stylesheet" href="styles/inscription.css">
     <link rel="stylesheet" href="styles/bootstrap-4.5.3-dist/css/bootstrap.min.css">
 </head>
@@ -32,7 +32,7 @@
                                 <a class="nav-link active" aria-current="page" href="afficher.php">Forum</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="inscription.php">Connexion</a>
+                                <a class="nav-link active" href="deconnexion.php">Deconnexion</a>
                               </li>
                             </ul>
                           </div>
@@ -52,6 +52,7 @@
 
             <?php 
             require_once 'connexion.php';
+           
                 if(isset($_GET['reg_err']))
                 {
                     $err = htmlspecialchars($_GET['reg_err']);
@@ -62,7 +63,7 @@
                         ?>
                          <div class="alert alert-success" role="alert">
                      <h4 class="alert-heading text-center">FELICITATION</h4>
-                  <p class="text-center">Votre inscription a été effectuée avec succès.</p>
+                  <p class="text-center">Votre ajoue a été effectuée avec succès.</p>
                               <hr>
                      <p class="text-center"><a href="accueil.html">Acceder à votre compte</a></p>
                         </div>
@@ -111,39 +112,46 @@
                             </div>
                         <?php 
 
-                    }
+                    } 
                 }
                 ?>
 
 
+<?php 
+             if(isset( $_GET['ID']))
+             {
+    
+                    $ID=$_GET['ID'];
+                    
+                    $sql="SELECT * FROM inscription WHERE ID='$ID'";
+                    $req=$db->query($sql) or die ("Erreur SQL");
+                    $data=$req->fetch();
+                }
+      ?>
 
-
-
-
-                <form class="m-auto " id="contact" action="traitementincription.php" method="post">
-                  <h3>Administrateur</h3>
-                  <h4>Inscrivez</h4>
                   <div class="m-auto">
-                      <div class="text-center">
-                        <fieldset class="text-center" >
-                            <input name="username" placeholder="Username" type="text"  required autofocus>
-                          </fieldset>
-                      </div>
-                      <fieldset>
-                        <input name="email" placeholder=" Email " type="email"  required>
-                      </fieldset>
-                      <fieldset>
-                        <input name="password"  placeholder="Mot de passe" type="password"  required>
-                      </fieldset>
-                      <fieldset>
-                        <input name="confirm_pass" placeholder="confirme mot de passe" type="password"  required>
-                      </fieldset>
-                      <fieldset>
-                        <button name="submit" type="submit" id="submit" data-submit="...Sending">Inscription</button>
-                      </fieldset>
+                    <form class="m-auto " id="contact" action="modifieCmpte.php" method="post">
+                    <h3>Administrateur</h3>
+                    <h4>Modifier</h4>
+                    <div class="m-auto">
+                        <div class="text-center">
+                          <fieldset class="text-center" >
+                              <input name="username" placeholder="Username" type="text"  value="<?php echo $data['username'];?>" required autofocus>
+                            </fieldset>
+                        </div>
+                        <fieldset>
+                          <input name="email" placeholder=" Email " type="email" value="<?php echo $data['email'];?>" required>
+                        </fieldset>
+                        <fieldset>
+                          <input name="password"  placeholder="Mot de passe" type="password" value="<?php echo $data['password'];?>" required>
+                        </fieldset>
+                        
+                        <fieldset>
+                          <button name="submit" type="submit" id="submit" data-submit="...Sending">Enregistrer</button>
+                        </fieldset>
+                    </div>
+                  </form>
                   </div>
-                  <p class="copyright"> <a href="connexion.php" style="color: #10F86C; text-decoration: none;"  title="Colorlib">Connexion</a></p>
-                </form>
               </div>
         </div>
     </div>

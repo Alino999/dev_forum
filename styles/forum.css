@@ -1,0 +1,58 @@
+nav{
+    margin-left: 520px;
+  }
+
+ 
+
+  .ajout {
+      margin-top: 50px;
+    width: 250px;
+    height: 40px;
+    
+}
+.image{
+    background-image: url("../images/forum.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+label{
+    color: white;
+}
+
+
+
+  @media (max-width: 375px){
+    nav{
+        display: block;
+        margin-left: 0;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .ajout {
+        margin-top: 50px;
+      width: auto;
+      height: auto;
+      
+  }
+  
+  footer{
+      font-size: 12px;
+  }
+
+  .container important{
+      width: au; 
+  }
+}
+
+
+
+  @media (max-width: 768px){
+      nav{
+          display: block;
+          margin-left: 0;
+          margin: 0;
+          margin-top: 100px;
+      }
+    
+  }

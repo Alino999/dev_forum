@@ -25,13 +25,13 @@
                           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="navbar-brand" href="#">Accueil</a>
+                                    <a class="navbar-brand" href="index.php">Accueil</a>
                                 </li>
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Forum</a>
+                                <a class="nav-link active" aria-current="page" href="afficher.php">Forum</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="#">Connexion</a>
+                                <a class="nav-link active" href="deconnexion.php">Deonnexion</a>
                               </li>
                             </ul>
                           </div>
@@ -42,9 +42,9 @@
             <div class="container con">
                 <div class="image text-center" >
                     <!-- <img src="images/Admin.png" alt="">-->
-                    <button type="submit" class="btn btn-primary ajout">Ajouter</button> <br> 
-                    <button type="submit" class="btn btn-success ajout">Modifier</button> <br> 
-                    <button type="submit" class="btn btn-danger ajout">Supprimer</button>
+                    <a href="tableau_bordadmin.php"><button type="submit" class="btn btn-primary ajout">Ajouter</button></a> <br> 
+                    <a href="tableau_bordadmin.php"><button type="submit" class="btn btn-success ajout">Modifier</button> <br></a> 
+                    <a href="tableau_bordadmin.php"><button type="submit" class="btn btn-danger ajout">Supprimer</button></a>
                  </div>
             </div>
         </div>

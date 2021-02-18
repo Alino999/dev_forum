@@ -25,13 +25,13 @@
                           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="navbar-brand" href="#">Accueil</a>
+                                    <a class="navbar-brand" href="index.php">Accueil</a>
                                 </li>
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Forum</a>
+                                <a class="nav-link active" aria-current="page" href="afficher.php">Forum</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="#">Connexion</a>
+                                <a class="nav-link active" href="deconnexion.php">Deconnexion</a>
                               </li>
                             </ul>
                           </div>
@@ -45,8 +45,8 @@
                   <p style="font-size: 30px;" class="mt-5 ">Bienvenu dans le forum <br> du <span style="font-weight: bold; color: #10F86C;">group Lacsoft</span></p> <br> <br> <br>
                   <p>Aidez les autres et faîtes vous aidez</p> <br> <br> 
                   <div class="row mb-2">
-                    <div class="col"><button type="submit" class="btn btn-primary ">INSCRIPION</button></div>
-                    <div class="col"><button style="width: 150px;" class="btn btn-success"><a class="text-none text-white " href="">Forum</a></button></div>
+                    <div class="col"><a href="inscription.php"><button type="submit" class="btn btn-primary ">INSCRIPION</button></a></div>
+                    <div class="col"><button style="width: 150px;" class="btn btn-success"><a class="text-none text-white " href="authentification.php">Forum</a></button></div>
                   </div>
                   
                 </figure>

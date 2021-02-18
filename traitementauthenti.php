@@ -8,7 +8,7 @@ $username = htmlspecialchars($_POST['email']);
 $password = htmlspecialchars($_POST['password']);
 //Prépare une requête à l'exécution et retourne 
 $check = $db -> prepare('SELECT email, password FROM Inscription WHERE egimail= ?');
-$check -> execute(array(email));
+$check -> execute(array($email));
 $data = $check -> fetch();
 $row = $check -> rowCount();
 

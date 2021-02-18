@@ -2,13 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum</title>
+    <title>Afficher les postes</title>
     <link rel="stylesheet" href="styles/bootstrap-4.5.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/forum.css">
+    <link rel="stylesheet" href="styles/reponse.css">
 </head>
 <body>
+
+    <meta charset="UTF-8">
+ 
     <div class="container-fluid">
         <div class="container">
             <header class="">
@@ -25,13 +27,13 @@
                           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="navbar-brand" href="index.php">Accueil</a>
+                                    <a class="navbar-brand" href="#">Accueil</a>
                                 </li>
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="afficher.php">Forum</a>
+                                <a class="nav-link active" aria-current="page" href="affichage.php">Forum</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="deconnexion.php">Deconnexion</a>
+                                <a   href="deconnexion.php"><button type="button" class="btn btn-primary">Deconnexion</button></a>
                               </li>
                             </ul>
                           </div>
@@ -46,28 +48,16 @@
        <div class="container image">
         <div class="row ">
           <div class="col-6 m-auto">
-            <form action="traitementforum.php" method="POST">
+            <form action="traitementreponse.php" method="POST">
               <div class="form-group">
                 <label for="exampleFormControlInput1">Username</label>
                 <input name="username" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Catégorie</label>
-                <input name="categorie" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Catégorie">
+                <label for="exampleFormControlInput1">reponse</label>
+                <input name="reponses" type="long" class="form-control" id="exampleFormControlInput1" placeholder="Question">
               </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Sous Catégorie </label>
-                <input name="sous_categorie" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Sous Catégorie">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Sujet</label>
-                <input name="sujet" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Sujet">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Question</label>
-                <input name="question" type="textarea" class="form-control" id="exampleFormControlInput1" placeholder="Question">
-              </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
           </div>
           
