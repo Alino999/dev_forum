@@ -64,7 +64,7 @@
                      <h4 class="alert-heading text-center">FELICITATION</h4>
                   <p class="text-center">Votre inscription a été effectuée avec succès.</p>
                               <hr>
-                     <p class="text-center"><a href="accueil.html">Acceder à votre compte</a></p>
+                     <p class="text-center"><a href="authentification.php">Acceder à votre compte</a></p>
                         </div>
                         <?php
                         break;
@@ -118,8 +118,7 @@
 
 
 
-
-
+                <div class="text-center">
                 <form class="m-auto " id="contact" action="traitementincription.php" method="post">
                   <h3>Administrateur</h3>
                   <h4>Inscrivez</h4>
@@ -144,6 +143,9 @@
                   </div>
                   <p class="copyright"> <a href="connexion.php" style="color: #10F86C; text-decoration: none;"  title="Colorlib">Connexion</a></p>
                 </form>
+                </div>
+
+
               </div>
         </div>
     </div>

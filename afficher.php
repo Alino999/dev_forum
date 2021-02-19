@@ -42,8 +42,10 @@
         </div>
     </div>
 
-    <div class="container">
-       
+    <div class="container ima">
+      <div class="text-center">
+      <a href="forum.php"><button type="button" class="outline-none btn btn-success">Question</button></a>
+      </div>
 
 
 <?php

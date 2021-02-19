@@ -37,7 +37,7 @@
                               
                             ));
 
-                            header('Location:inscription.php?reg_err=success');
+                            header('Location:afficher.php?reg_err=success');
                             die();
                             }else{ header('Location: traitementforum.php?reg_err=question_length'); die();}
                         }else{ header('Location: traitementforum.php?reg_err=sujet_length'); die();}

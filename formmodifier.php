@@ -129,28 +129,30 @@
                 }
       ?>
 
+                <form class="m-auto " id="contact" action="modifieCmpte.php" method="post">
+                  <h3>Administrateur</h3>
+                  <h4>Modifier</h4>
                   <div class="m-auto">
-                    <form class="m-auto " id="contact" action="modifieCmpte.php" method="post">
-                    <h3>Administrateur</h3>
-                    <h4>Modifier</h4>
-                    <div class="m-auto">
-                        <div class="text-center">
-                          <fieldset class="text-center" >
-                              <input name="username" placeholder="Username" type="text"  value="<?php echo $data['username'];?>" required autofocus>
-                            </fieldset>
-                        </div>
-                        <fieldset>
-                          <input name="email" placeholder=" Email " type="email" value="<?php echo $data['email'];?>" required>
-                        </fieldset>
-                        <fieldset>
-                          <input name="password"  placeholder="Mot de passe" type="password" value="<?php echo $data['password'];?>" required>
-                        </fieldset>
-                        
-                        <fieldset>
-                          <button name="submit" type="submit" id="submit" data-submit="...Sending">Enregistrer</button>
-                        </fieldset>
-                    </div>
-                  </form>
+                      <div class="text-center">
+                        <fieldset class="text-center" >
+                            <input name="username" placeholder="Username" type="text"  value="<?= $data['username'] ?>" required autofocus>
+                          </fieldset>
+                         
+                      </div>
+                      <fieldset>
+                        <input name="email" placeholder=" Email " type="email" value="<?= $data['username'] ?>" required>
+                      </fieldset>
+                      <fieldset>
+                        <input name="password"  placeholder="Mot de passe" type="password" value="<?= $data['username'] ?>" required>
+                      </fieldset>
+                      <fieldset class="text-center" >
+                            <input name="ID" placeholder="ID" type="hidden"  value="<?= $data['ID'] ?>" required autofocus>
+                          </fieldset>
+                      <fieldset>
+                        <button name="submit" type="submit" id="submit" data-submit="...Sending">Enregistrer</button>
+                      </fieldset>
+                  </div>
+                </form>
                   </div>
               </div>
         </div>

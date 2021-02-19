@@ -55,6 +55,14 @@
                 <label for="exampleFormControlInput1">Catégorie</label>
                 <input name="categorie" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Catégorie">
               </div>
+              <div style="width:200px;" class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Front-end</option>
+              <option value="1">Back-end</option>
+              <option value="2">Base de données</option>
+            </select>
+            <label for="floatingSelect">Catégorie</label>
+          </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Sous Catégorie </label>
                 <input name="sous_categorie" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Sous Catégorie">
@@ -67,7 +75,7 @@
                 <label for="exampleFormControlInput1">Question</label>
                 <input name="question" type="textarea" class="form-control" id="exampleFormControlInput1" placeholder="Question">
               </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
           </div>
           

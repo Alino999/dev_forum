@@ -1,25 +1,33 @@
 
 <?php
 require_once 'connexion.php';
-$username = $_POST['username'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$ID="";
+$userme = $_POST['username'];
+$mail = $_POST['email'];
+$pass = $_POST['password'];
+$ID = $_POST['ID'];
+
+if(isset($_POST['submit']))
+{
+
+    $sql=$db->prepare("UPDATE inscription SET  username=?, email=?, password=? WHERE ID=$ID");
+    $data=array($userme, $mail, $pass);
+    $sql-> execute($data);
+    if($sql){
+      
+        header("location:tableau_bordadmin.php");
+
+    }
+    else{
+        ?>
+    <p>Modification echouée veillez remodifier</p>
+    <?php
 
 
+    }
+}
+  ?>
 
-
-$req=$db->prepare('UPDATE inscription set username=? email=?, password=?  WHERE ID=?');
-    $req-> execute(array(         
-      $username, $email, $password, $ID
-            
-           
-      )); 
-
-
-         
-        
-
+<?php
 
 /*
            require_once 'connexion.php';
